@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #c8beaf,
+        #3a1f02
+    );
+
+    font-family: Georgia, serif;
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   الشاشة الأولى
+========================= */
+
+.welcome {
+
+    transition: 
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.top-text {
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    color: #000000;
+}
+
+
+.welcome h1 {
+
+    font-size: 70px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.welcome h2 {
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    font-style: italic;
+
+    margin-bottom: 25px;
+
+}
+
+
+.description {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+    color: #000000;
+}
+
+
+/* =========================
+   الزرار
+========================= */
+
+button {
+
+    border: none;
+
+    padding: 17px 42px;
+
+    border-radius: 50px;
+
+    background-color: #000000;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.08);
+
+    background-color: #000000;
+
+}
+
+
+/* =========================
+   الرسالة
+========================= */
+
+.letter {
+
+    display: none;
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+}
+
+
+.letter.show {
+
+    display: block;
+
+    animation: showLetter 1.2s ease forwards;
+
+}
+
+
+.letter-small {
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.letter h1 {
+
+    font-size: 75px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.birthday-message {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 24px;
+
+    line-height: 1.9;
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+
+.signature {
+
+    font-size: 28px;
+
+    font-style: italic;
+
+    margin-top: 35px;
+
+}
+
+
+/* =========================
+   حركة ظهور الرسالة
+========================= */
+
+@keyframes showLetter {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px) scale(0.95);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
